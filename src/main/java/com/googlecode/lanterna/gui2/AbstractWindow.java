@@ -65,7 +65,7 @@ public abstract class AbstractWindow extends AbstractBasePane<Window> implements
         this.lastKnownDecoratedSize = null;
         this.closeWindowWithEscape = false;
 
-        this.hints = new HashSet<Hint>();
+        this.hints = new HashSet<>();
     }
 
     /**
@@ -163,7 +163,7 @@ public abstract class AbstractWindow extends AbstractBasePane<Window> implements
 
     @Override
     public void setHints(Collection<Hint> hints) {
-        this.hints = new HashSet<Hint>(hints);
+        this.hints = new HashSet<>(hints);
         invalidate();
     }
 
